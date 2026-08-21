@@ -145,16 +145,52 @@ person.greet();
 ### Advanced JavaScript
 
 15. **What is a callback function?**
-
+answer-
 a callback function is a function that is passed as an argument to another function and is executed later.
 
 16. **What are Promises in JavaScript? Explain `pending`, `fulfilled`, and `rejected`.**
-
+answer-
 a Promise is an object used to handle the result of an asynchronous operation.
 a Promise has three states:
 1. pending: The operation is still in progress.
 2. fulfilled: The operation completed successfully.
 3. rejected: The operation failed.
+
+17. **What is `async/await` and how does it work with Promises?**
+
+answer-
+async/await is a simpler way to work with Promises and asynchronous operations.
+an async function always returns a Promise.
+await pauses the execution of the async function until the Promise is settled.
+
+18. **What is the JavaScript Event Loop? Explain the Call Stack, Web APIs, Callback Queue, and Microtask Queue.**
+ answer - The Event Loop allows JavaScript to handle asynchronous operations even though JavaScript is single-threaded.
+1. Call Stack:
+It keeps track of the functions currently being executed.
+2. Web APIs:
+The browser provides APIs such as setTimeout, DOM events, and network requests to handle asynchronous operations.
+3. Callback Queue:
+Callbacks from operations such as setTimeout are placed in the callback queue when they are ready.
+4. Microtask Queue:
+Promise callbacks such as .then(), .catch(), and .finally() are placed in the microtask queue.
+The Event Loop checks whether the Call Stack is empty and then moves tasks from the queues to the Call Stack.
+
+19. **What is the difference between shallow copy and deep copy?**
+answer - a shallow copy copies the top-level properties of an object. Nested objects are still referenced by the original object.
+            a deep copy creates a completely independent copy, including nested objects.
+
+
+20. **What are `map()`, `filter()`, `reduce()`, `forEach()`, and `find()`? When would you use each?**
+
+answer - map()- used to create a new array by transforming every element.
+        filter() - used to create a new array containing elements that satisfy a condition.
+        reduce()-used to reduce an array to a single value, such as a sum or total.
+        forEach()-used to execute a function for each element. It does not create a new array.
+        find()- used to find the first element that satisfies a condition.
+
+
+
+
 
 
 
