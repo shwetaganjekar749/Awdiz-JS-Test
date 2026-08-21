@@ -78,7 +78,7 @@ eg.const add = function(a, b) {
   return a + b;
 };
 
-10. **What are arrow functions? How are they different from normal functions?**
+// 10. **What are arrow functions? How are they different from normal functions?**
 Arrow functions are a shorter way of writing functions introduced in ES6.
 eg.
 const add = (a, b) => {
